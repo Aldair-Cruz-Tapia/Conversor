@@ -9,12 +9,15 @@ public class ValoresPesos {
     public double getGramoLibra() {
         return gramoLibra;
     }
+
     public double getGramoOnza() {
         return gramoOnza;
     }
+
     public double getLibraGramo() {
         return libraGramo;
     }
+
     public double getOnzaGramo() {
         return onzaGramo;
     }

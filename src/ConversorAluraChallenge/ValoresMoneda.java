@@ -3,7 +3,7 @@ package ConversorAluraChallenge;
 public class ValoresMoneda {
     private final double PesoaDolar = 0.054;
     private final double DolaraPeso = 18.38;
-    private  final double PesoaLibra = 0.045;
+    private final double PesoaLibra = 0.045;
     private final double LibraPeso = 22.08;
     private final double PesoaEuro = 0.051;
     private final double EuroaPeso = 19.48;
@@ -11,6 +11,7 @@ public class ValoresMoneda {
     private final double YenaPeso = 0.14;
     private final double PesoaWon = 70.58;
     private final double WonaPeso = 0.014;
+
     public double getPesoaDolar() {
         return PesoaDolar;
     }

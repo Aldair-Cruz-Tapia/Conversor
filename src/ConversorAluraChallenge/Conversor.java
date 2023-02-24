@@ -7,7 +7,8 @@ import java.util.regex.Pattern;
 
 public class Conversor {
     private static int cont = 0;
-    public void convertir (double valor,String unidades,String cambio){
+
+    public void convertir(double valor, String unidades, String cambio) {
         double resultado;
         do {
             String input = JOptionPane.showInputDialog("Cantidad");
@@ -15,17 +16,17 @@ public class Conversor {
             Matcher m = p.matcher(input);
             if (m.find()) {
                 JOptionPane.showMessageDialog(null, "Solo numeros");
-                cont=0;
+                cont = 0;
             } else {
                 double cantidad = Double.parseDouble(input);
                 if (cantidad > 0) {
                     resultado = cantidad * valor;
-                    JOptionPane.showMessageDialog(null, cantidad +" "+ unidades+" equivalen a " + resultado +" "+ cambio);
+                    JOptionPane.showMessageDialog(null, cantidad + " " + unidades + " equivalen a " + resultado + " " + cambio);
                 } else {
                     JOptionPane.showMessageDialog(null, "Se requiere una cantidad mayor a Cero (0)");
                 }
                 cont++;
             }
-        }while (cont < 1);
+        } while (cont < 1);
     }
 }
